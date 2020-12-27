@@ -339,8 +339,7 @@ main .recherches .trier{
             color:#0065FC;
         }
         
-        .selection .far{
-            font-size:0.8em;
+        .selection #greystar{
             color:#F2F2F2;
         }
 
@@ -408,7 +407,7 @@ main .recherches .trier{
             margin-top:35px;
         }
         
-        .populaires .hotel .far{
+        .populaires #greystar{
             font-size:0.8em;
             color:#F2F2F2;
         }
