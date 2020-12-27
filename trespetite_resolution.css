@@ -1,0 +1,675 @@
+/*********************************GENERAL************************/
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:14px;
+    max-width:100%;
+    margin:auto;
+}
+
+header, main{
+    padding-right:2%;
+    padding-left:2%;
+}
+
+p{
+    font-size:14px;
+}
+
+h1{
+    font-size:23px;
+    font-weight:bold;
+}
+
+h2{
+    font-size:23px;
+    font-weight:bold;
+}
+
+h3{
+    font-size:17px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+main{
+    position:relative;
+}
+
+/*********************************HEADER*************************/
+header{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+header .logo{
+    padding-top:2%;
+    display:block;
+    width:100%;
+}
+
+header .right{
+    width:100%;
+    display:flex;
+    position:relative;
+    padding-bottom:10px;
+}
+
+.right .inscrire{
+    display:flex;
+    width:33%;
+    justify-content: center;
+    align-items:center;
+    top:0px;
+    margin-bottom:25px;
+    position:absolute;
+    top:-50px;
+    right:-15px;
+}
+
+header .right nav{
+    width:100%;
+}
+
+header .right ul{
+    display:flex;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+header .right ul li{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    width:100%;
+    list-style-type:none;
+}
+
+header .right nav li a{
+    text-decoration:none;
+    color:grey;
+    margin-bottom:10px;
+}
+
+.right nav .survol{
+    border-bottom:2px #F2F2F2 solid;
+}
+
+.right nav .survol:hover{
+    border-bottom:2px #0065FC solid;
+    border-top:none;
+}
+
+.right nav li a:hover{
+    color:#0065FC;
+}
+
+.right a span{
+    color:blue;
+    
+}
+
+.right span:hover{
+    color:blue;
+}
+
+/***************************************MAIN*************************/
+
+/**************CITATION*******************/
+
+main .recherches .slogan{
+    width:90%;
+    height:150px;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.slogan h1{
+    font-size:18px;
+    font-weight:bold;
+}
+
+main .recherches .slogan .top{
+    height:40%;
+    line-height: 2em;
+    margin-bottom:10%;
+}
+
+/**************RECHERCHE*******************/
+
+main .recherches .slogan .barre{
+    width:100%;
+    height:30%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    float:left;
+    border:0.5px #F2F2F2 solid;
+    margin-top:50px;
+}
+
+.barre div{
+    font-family: 'Raleway', sans-serif;
+}
+
+.barre .icone{
+    width:15%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#F2F2F2;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    
+}
+
+.barre .icone i{
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+.barre .saisie{
+    width:70%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+}
+
+.barre input{
+    width:100%;
+    border:none;
+    font-family: 'Raleway', sans-serif;
+    font-size:17px;
+    font-weight: bold;
+}
+
+.boutton{
+    width:15%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Raleway', sans-serif;
+    background-color:#0065FC;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    border-radius:10px;
+    padding-left:20px;
+}
+
+.boutton i.fas{
+    display:block;
+    color:white;
+    font-size:17px;
+    cursor: pointer;
+}
+
+button {
+    display:none;
+}
+
+/**************FILTRES*******************/
+
+main .recherches .trier{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.trier .filtres{
+    width:100%;
+    margin-top:2%;
+    display:flex;
+}
+
+.trier .filtres #first{
+    display:block;
+    width:100%;
+    font-size:14px;
+    margin-bottom:2px;
+    margin-top:5px;
+}
+
+.trier .filtres h3{
+    display:block;
+    width:100%;
+    font-size:14px;
+}
+
+.filtres ul{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    padding:0;
+}
+
+.filtres ul li{
+    height:35px;
+    width:auto;
+    margin-right:2%;
+    display:flex;
+    list-style-type: none;
+    align-items:center;
+    border:1px #F2F2F2 solid;
+    border-radius:20px;
+    padding-right:2%;
+
+}
+
+.filtres ul li{
+    margin-bottom:15px;
+    margin-left:0px;
+}
+
+.filtres ul li .icone{
+    display:flex;
+    height: 35px;
+    width: 50px;
+    background-color:#DEEBFF;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right:10px;
+}
+
+.filtres ul .icone i{
+    font-size:14px;
+    color:#0065FC;
+}
+
+.filtres ul h3 a{
+    text-decoration:none;
+    color:black;
+} 
+
+.infos{
+    height:35px;
+    margin-right:30px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.infos .fas{
+    font-size:20px;
+    color:white;
+    background-color:#0065FC;
+    border-radius:25px;
+    margin-right:8px;
+}
+
+.infos p{
+    font-size:12px;
+}
+
+
+
+/*******************************Hébergements à Marseille******************************/
+
+.hebergements{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-wrap:wrap;
+    margin:auto;
+    position:relative;
+}
+
+.marseille{
+    width:100%;
+    height:70%;
+    border-radius:15px;
+    margin:auto;
+    position:absolute;
+    top:770px;
+    margin-top:0px;
+    background-color:white;
+}
+
+    .marseille h2{
+        margin-bottom:10px;
+        margin-left:2.5%;
+    }
+
+    .selection{
+        display:flex;
+        flex-wrap:wrap;
+        margin-bottom:30px;
+    }
+
+        .selection div{
+            width:100%;
+            height:10%;
+            line-height: 20%;
+            background-color:white;
+            border-radius:15px;
+            margin-right:2%;
+            margin-left:2%;
+            margin-bottom:10px;
+            margin-top:10px;
+            box-shadow: 0px 0px 25px -15px;
+            
+        }
+
+        .selection p,.selection h3,.selection span{
+            margin-left:10px;
+            margin-bottom:8%;
+        }
+
+        .selection i{
+            margin-top:-2px;
+        }
+
+        .selection a img{
+            width:100%;
+            height:150px;
+            object-fit:cover;
+            object-position:bottom;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .selection .fas{
+            font-size:0.8em;
+            color:#0065FC;
+        }
+        
+        .selection .far{
+            font-size:0.8em;
+            color:#F2F2F2;
+        }
+
+.marseille .afficher span{
+    margin-left:3%;
+    font-size:18px;
+}
+        
+
+.populaires{
+    width:100%;
+    margin:auto;
+    padding:2%;
+    background-color:#F2F2F2;
+    position:absolute;
+    border-radius:0px;
+    top:30px;
+
+}
+
+    .populaires .toppopulaire{
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+        vertical-align: center;
+        align-items:baseline;
+        margin-bottom:10px;
+    }
+
+        .toppopulaire i{
+            font-size:1.5em;
+        }
+
+    .populaires .hotellerie{
+        height:85%;
+    }
+
+    .populaires .hotel{
+        width:100%;
+        height:30%; 
+        margin-bottom:30px;
+        box-shadow: 0px 0px 25px -15px;
+        background-color:white;
+        border-radius:15px;
+        
+    }
+        .populaires .hotel a{
+            width:100%;
+            height:100%;
+            display:flex;
+            
+        }
+
+        .populaires .hotel p{
+            font-size:13px;
+            line-height:1.2em;
+            text-align:left;
+            margin-bottom:5px;
+        }
+
+        .populaires .hotel h3{
+            margin-top:10px;
+            line-height: 1em;
+            font-size:14px;
+        }
+
+        .populaires .hotel .fas{
+            font-size:0.8em;
+            color:#0065FC;
+            margin-top:7%;
+            margin-bottom:0;
+        }
+        
+        .populaires .hotel .far{
+            font-size:0.8em;
+            color:#F2F2F2;
+        }
+
+        .populaires .hotel .photo{
+            width:100%;
+            height:auto;
+        }
+        .populaires .hotel .photo img{
+            width:100%;
+            height:150px;
+            object-fit:cover;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .populaires .hotel a .description{
+            padding-top:0px;
+            padding-left:15px;
+            text-align:left;
+            padding-bottom:0;
+        }
+
+/***************************************Activités******************************************/
+
+.activites{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    height:auto;
+    margin-top:60px;
+    position:relative;
+    top:2600px;
+    margin:auto;
+}
+.activites h2{
+    margin-left:15px;
+}
+
+.catalogue{
+    width:100%;
+    height:70%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.catalogue article{
+    height:auto;
+}
+
+.catalogue article h3{
+    margin-left:15px;
+    margin-top:12px;
+}
+
+
+/******Colonne 1***********/
+
+.activites .colonne1{
+    width:100%;
+    height:20%;
+    border-radius:15px;
+    box-shadow: 0px 0px 25px -15px;
+    margin:0px 0px 25px 0px;
+}
+    .colonne1 a img{
+    width:100%;
+    height:150px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/********Colonne 2*********/
+
+.activites .colonne2{
+    margin-right:3%;
+    width:100%;
+    height:40%;
+    margin:0px 0px 25px 0px;
+}
+
+.activites .colonne2 .top{
+    width:100%;
+    height:50%;
+    border-radius:15px;
+    box-shadow: 0px 0px 25px -15px;
+    padding-bottom: 3px;
+    margin:0px 0px 25px 0px;
+    
+}
+    .colonne2 .top a img{
+    width:100%;
+    height:150px;
+    object-fit: cover;
+    object-position:center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.activites .colonne2 .bottom{
+    width:100%;
+    height:50%;
+    border-radius:15px;
+    box-shadow: 0px 0px 25px -15px;
+    padding-bottom: 3px;
+}
+    .colonne2 .bottom a img{
+    width:100%;
+    height:150px;
+    object-fit: cover;
+    object-position:center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/********Colonne 3*********/
+
+.activites .colonne3{
+    width:100%;
+    height:20%;
+    border-radius:15px;
+    box-shadow: 0px 0px 25px -15px;
+    margin:0px 0px 25px 0px;
+    
+}
+    .colonne3 a img{
+    width:100%;
+    height:150px;
+    object-fit: cover;
+    object-position:top;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/********Colonne 4*********/
+
+.activites .colonne4{
+    width:100%;
+    height:40%;
+    margin:0px 0px 25px 0px;
+}
+
+.activites .colonne4 .top{
+    width:100%;
+    height:50%;
+    margin-bottom:28px;
+    border-radius:15px;
+    box-shadow: 0px 0px 25px -15px;
+    padding-bottom: 3px;
+    margin-bottom:35px;
+    margin:0px 0px 25px 0px;
+}
+
+    .colonne4 .top a img{
+    width:100%;
+    height:150px;
+    object-fit: cover;
+    object-position:top;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.activites .colonne4 .bottom{
+    width:100%;
+    height:50%;
+    border-radius:15px;
+    box-shadow: 0px 0px 25px -15px;
+    padding-bottom: 3px;
+    margin-bottom:25px;
+}
+    .colonne4 .bottom a img{
+    width:100%;
+    height:150px;
+    object-fit: cover;
+    object-position:top;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*******************FOOTER**********************/
+
+footer{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    height:auto;
+    margin-top:50px;
+    background-color:#F2F2F2;
+    padding-top:20px;
+    padding-left:30px;
+    margin-top:7%;
+    margin-left:0.5%;
+    position:absolute;
+    top:4720px;
+    padding-bottom:8%;
+}
+
+footer div{
+    width:100%;
+    height:33%;
+    text-align:left;
+    margin-bottom:20px;
+}
+
+footer div span{
+    display:block;
+    margin-bottom:25px;
+}
+
+

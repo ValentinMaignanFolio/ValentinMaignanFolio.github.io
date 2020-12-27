@@ -1,0 +1,609 @@
+/*********************************GENERAL************************/
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:14px;
+    max-width:100%;
+    padding-left:2%;
+    padding-right:2%;
+}
+
+main{
+    width:100%;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+p{
+    font-size:14px;
+}
+
+h1{
+    font-size:23px;
+    font-weight:bold;
+}
+
+h2{
+    font-size:23px;
+    font-weight:bold;
+}
+
+h3{
+    font-size:17px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+/*********************************HEADER*************************/
+header{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding-left:0px;
+}
+
+header .logo{
+    width:100px;
+    padding-top:2%;
+    margin-bottom:20px;
+}
+
+header .right{
+    width:50%;
+    display:flex;
+}
+
+.right .inscrire{
+    display:flex;
+    width:33%;
+    justify-content: center;
+    align-items:center;
+}
+
+header .right nav{
+    width:67%;
+}
+
+header .right ul{
+    display:flex;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+header .right ul li{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    width:100%;
+    list-style-type:none;
+}
+
+header .right nav li a{
+    text-decoration:none;
+    color:grey;
+}
+
+.right nav .survol:hover{
+    border-top:2px #0065FC solid;
+}
+
+.right nav li a:hover{
+    color:#0065FC;
+}
+
+.right a span{
+    color:blue;
+    
+}
+
+.right span:hover{
+    color:blue;
+}
+
+/***************************************MAIN*************************/
+
+/**************CITATION*******************/
+
+main .recherches .slogan{
+    width:100%;
+}
+
+main .recherches .slogan .top{
+    height:40%;
+    line-height: 1.5em;
+}
+
+/**************RECHERCHE*******************/
+
+main .recherches .slogan .barre{
+    height:30%;
+    display:flex;
+    float:left;
+    border:0.5px #F2F2F2 solid;
+    margin-top:20px;
+}
+
+.barre div{
+    height:100%;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.barre .icone{
+    padding-top:12px;
+    padding-right:10px;
+    padding-left:10px;
+    padding-bottom: 5px;
+    background-color:#F2F2F2;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border:none;
+}
+
+.barre .saisie{
+    display:flex;
+    height:100%;
+    width:100%;
+    padding:5px 5px 5px 8px;
+    align-items:center;
+    justify-content:center;
+}
+
+.barre input{
+    border:none;
+    font-family: 'Raleway', sans-serif;
+    font-size:17px;
+    font-weight: bold;
+    padding:11px 6px 11px 6px;
+    margin-left:0;
+}
+
+button{
+    font-family: 'Raleway', sans-serif;
+    width:100%;
+    height:100%;
+    background-color:#0065FC;
+    text-decoration:none;
+    border:none;
+    color:white;
+    padding-right:17px;
+    padding-left:17px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.boutton i{
+    display:none;
+}
+
+/**************FILTRES*******************/
+
+main .recherches .trier{
+    width:100%;
+    
+}
+
+.trier .filtres{
+    width:100%;
+    margin-top:-2%;
+}
+
+.trier .filtres #first{
+    font-size:16px;
+    font-weight:bold;
+}
+
+.filtres ul{
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+    padding:0;
+    align-items: center;
+}
+
+.filtres ul li{
+    height:35px;
+    display:flex;
+    list-style-type: none;
+    align-items:center;
+    padding-right:10px;
+    border:1px #F2F2F2 solid;
+    border-radius:20px;
+    margin:auto;
+}
+
+.filtres ul li:hover{
+    border-radius:20px;
+    background-color:#F2F2F2;
+    color:black;
+}
+
+.filtres ul li .icone{
+    display:flex;
+    height: 35px;
+    width: 35px;
+    background-color:#DEEBFF;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right:10px;
+}
+
+.filtres ul .icone i{
+    font-size:14px;
+    color:#0065FC;
+}
+
+.filtres ul h3 a{
+    text-decoration:none;
+    color:black;
+} 
+
+.infos{
+    height:35px;
+    display:flex;
+    align-items:center;
+}
+
+.infos .fas{
+    font-size:25px;
+    color:white;
+    background-color:#0065FC;
+    border-radius:25px;
+    margin-right:20px;
+}
+
+/*******************************Hébergements à Marseille******************************/
+
+.hebergements{
+    width:98%;
+    height:auto;
+    display:flex;
+    flex-wrap:wrap;
+    padding-right:0px;
+    margin-right:0px;
+}
+
+.marseille{
+    width:100%;
+    height:auto;
+    padding:2% 0 2%;
+    background-color:#F2F2F2;
+    border-radius:15px;
+    margin-right:0px;
+
+}
+
+
+
+    .marseille h2{
+        margin-bottom:10px;
+        margin-left:2.5%;
+    }
+
+    .selection{
+        display:flex;
+        flex-wrap:wrap;
+        margin-bottom:1.5%;
+    }
+
+        .selection div{
+            width:45%;
+            height:35%;
+            margin:10px;
+            line-height: 50%;
+            background-color:white;
+            border-radius:15px;
+            margin-right:auto;
+            margin-left:20px;
+            margin-bottom:20px;
+            margin-top:20px;
+            box-shadow: 0px 0px 25px -15px;
+            line-height:1.5em;
+            
+            
+        }
+
+        .selection p,.selection h3,.selection span{
+            margin-left:10px;
+            
+        }
+
+        .selection h3{
+            font-size:15px;
+        }
+
+        .selection i{
+            margin-bottom:10px;
+            margin-top:-2px;
+        }
+
+        .selection a img{
+            width:100%;
+            height:auto;
+            border-radius:15px;
+        }
+
+        .selection .fas{
+            font-size:0.8em;
+            color:#0065FC;
+        }
+        
+        .selection .far{
+            font-size:0.8em;
+            color:#F2F2F2;
+        }
+
+.marseille .afficher span{
+    margin-left:2%;
+}
+        
+
+.populaires{
+    width:100%;
+    height:auto;
+    margin:auto;
+    background-color:white;
+    border-radius:15px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    margin-top:2%;
+}
+
+    .populaires .toppopulaire{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        margin-bottom:10px;
+    }
+
+        .toppopulaire i{
+            font-size:1.5em;
+            margin-left:10px;
+        }
+
+    .populaires .hotel{
+        width:100%;
+        height:auto; 
+        margin-bottom:30px;
+        box-shadow: 0px 0px 25px -15px;
+        background-color:white;
+        border-radius:15px;
+        
+    }
+        .populaires .hotel a{
+            width:100%;
+            height:100%;
+            display:flex;
+            
+        }
+
+        .populaires .hotel p{
+            line-height:10%;
+            text-align:center;
+            font-size:18px;
+        }
+
+        .populaires .hotel h3{
+            margin-top:5%;
+            font-size:25px;
+        }
+
+        .populaires .hotel .fas{
+            font-size:0.8em;
+            color:#0065FC;
+            margin-top:35px;
+        }
+        
+        .populaires .hotel .far{
+            font-size:0.8em;
+            color:#F2F2F2;
+        }
+
+        .populaires .hotel .photo{
+            width:40%;
+            height:100%;
+        }
+        .populaires .hotel .photo img{
+            width:100%;
+            height:auto;
+            border-radius:15px;
+        }
+
+        .populaires .hotel a .description{
+            width:100%;
+            text-align:center;
+            line-height:2em;
+        }
+
+/***************************************Activités******************************************/
+
+.activites{
+    width:100%;
+    height:1000px;
+    margin-top:60px;
+}
+
+.activites h2{
+    margin-left:15px;
+}
+.catalogue{
+    width:98%;
+    height:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+    margin:5px 5px 5px 5px;
+}
+
+.catalogue article{
+    width:50%;
+    height:100%;
+    margin:0px;
+}
+
+.catalogue article h3{
+    margin-left:15px;
+    margin-top:12px;
+}
+
+
+/******Colonne 1***********/
+
+.activites .colonne1{
+    width:45%;
+    height:45%;
+    border-radius:15px;
+    box-shadow: 0px 0px 25px -15px;
+}
+    .colonne1 a img{
+    width:100%;
+    height:87%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/********Colonne 2*********/
+
+.activites .colonne2{
+    width:45%;
+    height:45%;
+    margin:5px 5px 5px 5px;
+}
+
+.activites .colonne2 .top{
+    width:100%;
+    height:45%;
+    border-radius:15px;
+    margin-bottom:12%;
+    box-shadow: 0px 0px 25px -15px;
+    
+}
+    .colonne2 .top a img{
+    width:100%;
+    height:74%;
+    object-fit: cover;
+    object-position:center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.activites .colonne2 .bottom{
+    width:100%;
+    height:45%;
+    border-radius:15px;
+    box-shadow: 0px 0px 25px -15px;
+}
+    .colonne2 .bottom a img{
+    width:100%;
+    height:70%;
+    object-fit: cover;
+    object-position:top;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/********Colonne 3*********/
+
+.activites .colonne3{
+    width:45%;
+    height:45%;
+    border-radius:15px;
+    box-shadow: 0px 0px 25px -15px;
+    margin-top:2%;
+    margin:17px 25px 0px 0px;
+    
+}
+    .colonne3 a img{
+    width:100%;
+    height:87%;
+    object-fit: cover;
+    object-position:top;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/********Colonne 4*********/
+
+.activites .colonne4{
+    width:45%;
+    height:45%;
+}
+
+.activites .colonne4 .top{
+    width:100%;
+    height:40%;
+    margin-bottom:28px;
+    border-radius:15px;
+    margin-bottom:12%;
+    box-shadow: 0px 0px 25px -15px;
+    margin-top:8%;
+}
+
+    .colonne4 .top a img{
+    width:100%;
+    height:72%;
+    object-fit: cover;
+    object-position:top;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.activites .colonne4 .bottom{
+    width:100%;
+    height:42%;
+    border-radius:15px;
+    box-shadow: 0px 0px 25px -15px;
+}
+    .colonne4 .bottom a img{
+    width:100%;
+    height:73%;
+    object-fit: cover;
+    object-position:top;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*******************FOOTER**********************/
+
+footer{
+    width:100%;
+    height:220px;
+    margin-top:50px;
+    background-color:#F2F2F2;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-top:20px;
+    padding-left:30px;
+    margin-top:7%;
+    margin-left:0.5%;
+}
+
+footer div{
+    width:33%;
+    height:100%;
+    text-align:left;
+}
+
+footer div span{
+    display:block;
+    margin-bottom:25px;
+}
+
+
