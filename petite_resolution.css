@@ -339,7 +339,7 @@ main .recherches .trier{
             color:#0065FC;
         }
         
-        .selection #greystar{
+        .selection .greystar{
             color:#F2F2F2;
         }
 
@@ -407,7 +407,7 @@ main .recherches .trier{
             margin-top:35px;
         }
         
-        .populaires #greystar{
+        #greystar1, #greystar2, #greystar3, #greystar4, #greystar5, #greystar6, #greystar7{
             font-size:0.8em;
             color:#F2F2F2;
         }
